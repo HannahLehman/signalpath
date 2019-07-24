@@ -65,7 +65,7 @@ This is by no means an exhaustive list! It also does not account for the followi
 
     // Does specialMath(7) -> 78 mean I'm super close?
 `def iterator(x: Int, result1: Int, result2: Int): Int =`
-     `if (x == 0) 0`
-      `else if (x == 1) result1`
-      `else iterator(x - 1, result1 + result2, result1 + x)`
-    `println(iterator(7, 0, 1))`
+     `if (x == 0) 0
+      else if (x == 1) result1
+      else iterator(x - 1, result1 + result2, result1 + x)
+     println(iterator(7, 0, 1))`
